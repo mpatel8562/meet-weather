@@ -10,8 +10,16 @@ function getweatherData() {
         success: function (data) {
             console.log(finalURL);
             console.log(data);
+            document.getElementById('coun').innerHTML = data.sys.country;
             document.getElementById('lon').innerHTML = data.coord.lon;
             document.getElementById('lat').innerHTML = data.coord.lat;
+            document.getElementById('temp').innerHTML = data.main.temp;
+            document.getElementById('min').innerHTML = data.main.temp_min;
+            document.getElementById('max').innerHTML = data.main.temp_max;
+            document.getElementById('humi').innerHTML = data.main.humidity;
+            document.getElementById('press').innerHTML = data.main.pressure;
+            document.getElementById('wind').innerHTML = data.wind.speed;
+            document.getElementById('deg').innerHTML = data.wind.deg;
         },
         error: function (eMessage) {
             console.log(eMessage);

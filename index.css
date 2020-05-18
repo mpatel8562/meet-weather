@@ -1,6 +1,15 @@
-table,
-tr,
-th,
+table{
+    background-color: rgb(122, 191, 255) ;
+}
+tr{
+    color: rgb(56, 58, 57);
+    background-color: blanchedalmond;
+}
+th{
+    color: rgb(5, 5, 5);
+   
+}
 td {
-    border: 1px solid black;
+    border: 1px solid rgb(30, 7, 236);
+    
 }
